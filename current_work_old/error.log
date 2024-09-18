@@ -1,0 +1,14 @@
+Incorrect number of bindings supplied. The current statement uses 10, and there are 9 supplied.
+Incorrect number of bindings supplied. The current statement uses 10, and there are 9 supplied.
+name 'json' is not defined
+can only concatenate tuple (not "list") to tuple
+list indices must be integers or slices, not str
+not enough values to unpack (expected 10, got 9)
+not enough values to unpack (expected 10, got 9)
+table registrations has no column named registration_date
+table registrations has no column named registration_date
+table registrations has no column named registration_date
+table registrations has no column named registration_date
+table registrations has no column named registration_date
+Incorrect number of bindings supplied. The current statement uses 10, and there are 9 supplied.
+Incorrect number of bindings supplied. The current statement uses 10, and there are 9 supplied.

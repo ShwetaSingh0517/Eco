@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style1.css">
+</head>
+<body>
+
+    <h1>Registration Confirmation</h1>
+    <p>Your registration for the {{sport}} event has been successfully submitted!</p>
+  <div class="confirm_data_container">
+    <!-- Display registration data here -->
+    <p>Team Name: {{ registration_data[0] }}</p>
+    <p>Captain Name: {{ registration_data[1] }}</p>
+    <p>Vice Captain Name: {{ registration_data[2] }}</p>
+    <p>Phone: {{ registration_data[3] }}</p>
+    <p>Email: {{ registration_data[4] }}</p>
+    <p>Student ID: {{ registration_data[5] }}</p>
+    <p>Course: {{ registration_data[6] }}</p>
+    <p>Year: {{ registration_data[7] }}</p>
+    <p>Players:{{registration_data[8]}}
+    <!-- Example of displaying player names -->
+    <!--{% for player in registration_data[8] %}
+        <p>Player {{ loop.index }}: {{ player['player_name'] }}</p>
+    {% endfor %}-->
+
+  </div>
+    <a href="{{ url_for('home') }}">Return to Home</a>
+
+</body>
+</html>

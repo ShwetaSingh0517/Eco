@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+.home_notify{
+  height: 500px;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+  /* box-shadow: 0px 0px 5px black; */
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  border-radius: 5px;
+  
+}
+.gallery__img:hover{
+  box-shadow: 0px 0px 10px whitesmoke;
+  transform: scale(1.03);
+}
+
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.img-body{
+ background-color:  antiquewhite;
+}
+.Gallary_heading{
+          text-align: center;
+          font-size: 4rem;
+          margin-bottom: 10px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: black;
+          text-shadow: 0px 0px 10px whitesmoke;
+}
+@media screen and (max-width: 768px) {
+ .gallery{
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .Gallary_heading{
+  font-size: 20px;
+ }
+} 
+.gallery__img{
+  height: 220px;
+}
+.container{
+  margin: 10px;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+figure{
+  display: flex;
+  width:80%;
+  margin: auto;
+}
+
+.container{
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+}
+
+/* Navigation styles */
+.nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Container styles */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual image styles */
+.enlarge-hover {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.enlarge-hover:hover {
+    transform: scale(1.1); /* Enlarge the image by 10% on hover */
+}
+
+/* File upload button styles */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button styles */
+.btn-delete {
+    padding: 10px 20px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+}

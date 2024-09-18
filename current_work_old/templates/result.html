@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Results</title>
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional CSS styles here -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Sports Results</h1>
+        <div class="data-container">
+            <h2>All Data</h2>
+            <ul>
+                {% for sport, data in all_data.items() %}
+                <li class="sport-name">{{ sport }} Data:</li>
+                <ul class="data-list">
+                    {% for item in data %}
+                    <li>
+                        <span class="data-key">Team Name:</span>
+                        <span class="data-value">{{ item.team_name }}</span>
+                    </li>
+                    <li>
+                        <span class="data-key">Position:</span>
+                        <span class="data-value">{{ item.position }}</span>
+                    </li>
+                    <li>
+                        <span class="data-key">Remarks:</span>
+                        <span class="data-value">{{ item.remarks }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="form-container mt-5">
+            <!-- Add Result Form -->
+            <h2>Add Result</h2>
+            <form method="POST" action="/add_result">
+                <div class="form-group">
+                    <label for="sport">Sport:</label>
+                    <input type="text" name="sport" class="form-control" placeholder="Sport" required>
+                </div>
+                <div class="form-group">
+                    <label for="team_name">Team Name:</label>
+                    <input type="text" name="team_name" class="form-control" placeholder="Team Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="winner_name">Winner Name:</label>
+                    <input type="text" name="winner_name" class="form-control" placeholder="Winner Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="number" name="position" class="form-control" placeholder="Position" required>
+                </div>
+                <div class="form-group">
+                    <label for="remarks">Remarks:</label>
+                    <input type="text" name="remarks" class="form-control" placeholder="Remarks">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Result</button>
+            </form>
+        </div>
+        <div class="form-container mt-5">
+            <!-- Delete Result Form -->
+            <h2>Delete Result</h2>
+            <form method="POST" action="/delete_result">
+                <div class="form-group">
+                    <label for="sport">Sport:</label>
+                    <input type="text" name="sport" class="form-control" placeholder="Sport" required>
+                </div>
+                <div class="form-group">
+                    <label for="team_name">Team Name:</label>
+                    <input type="text" name="team_name" class="form-control" placeholder="Team Name" required>
+                </div>
+                <button type="submit" class="btn btn-danger">Delete Result</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

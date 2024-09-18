@@ -1,0 +1,68 @@
+/* Add this CSS code to style your registration confirmation page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.confirm_data_container {
+    border: 10px solid #007bff;
+    padding: 10px; /* Add padding to all sides */
+    width: calc(1.5 * 100%); /* Set the width to 1.5 times the content width */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+
+    /* You can add other styles to customize the container further */
+    box-sizing: border-box; /* Include padding in the total width */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.confirm_data_container:hover {
+    border: 15px solid green;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Style the container for registration data */
+.container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    display: inline-block;
+    font-size: 18px;
+    color: #b077d9;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 2px solid #b077d9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #b077d9;
+    color: #fff;
+}

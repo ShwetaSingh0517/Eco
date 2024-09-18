@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Form</title>
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style200.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+           Registration Form of VolleyBall
+        </div>
+        <form method="POST" action="/volleyball_registration" >
+           <div class="form-row">
+              <div class="input-data">
+               <input type='text' id="name" name='captain_name' required>
+                 <div class="underline"></div>
+                 <label for="">Caption Name*</label>
+              </div>
+              <div class="input-data">
+               <input type='text' id="name" name='vice_captain_name' required>
+                 <div class="underline"></div>
+                 <label for="">Vice Caption Name*</label>
+              </div>
+           </div>
+           <div class="form-row">
+             <div class="input-data">
+               <input type='text' id="name" name='teamname' required>
+                 <div class="underline"></div>
+                 <label for="">Team Name*</label>
+              </div>
+              <div class="input-data">
+               <input type='email' id="email" name='email' required>
+                 <div class="underline"></div>
+                 <label for="">Email Address*</label>
+              </div>
+           </div>
+           <div class="form-row">
+            <div class="input-data">
+               <input type='tel' id="phone" name='phone' required>
+               <div class="underline"></div>
+               <label for="">Contact Number*</label>
+            </div>
+            <div class="input-data">
+               <input type='text' id="Student-Id" name='student_id' required>
+               <div class="underline"></div>
+               <label for="">Student Id*</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type='text' id="course" name='course' required>
+               <div class="underline"></div>
+               <label for="">Course Name*
+            </div>
+            <div class="input-data">
+               <input type='text' id="year" name='year' required>
+               <div class="underline"></div>
+               <label for="">Year*</label>
+            </div>
+         </div>
+
+         
+           <div class="form-row">
+           <div class="input-data textarea">
+            <input type='text' id="Student-Id" name='players' required>
+              <br />
+              <div class="underline"></div>
+              <label for="">Enter 7 Vollyball Player Name*</label>
+              <br />
+              <div class="form-row submit-btn">
+                 <div class="input-data">
+                    <div class="inner"></div>
+                    <input type='submit' onclick="aleartfunc()" class="submit" name='REGISTER' value="register">
+                 </div>
+              </div>
+        </form>
+        </div>
+</body>
+</html>

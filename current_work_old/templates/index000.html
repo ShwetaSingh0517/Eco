@@ -1,0 +1,544 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="SGIT/html" charset="utf-8">
+    <meta name="description" content="It is Sports Event Registration Website Created 
+    By Rohan Sharma and Lakender Tyagi ">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="games,sports,sgit,sanskar college of 
+    engineering and technology,sanskar college of engineering and technology ghaziabad,
+    Rohan,Rohan Sharma,Lakender,Lakender Tyagi,Registration form,form,sports form,sport form, register,
+     saturday event,event form,saturday event form">
+    <title>Sports Meet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/navabr.css">
+    <link rel="stylesheet" href="static/css/btn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />     -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+body{
+    font-family: monospace;
+    background-color: #b974db;
+
+}
+#img1{
+    width: 154px;
+    height: 52px;
+    /* border: 2px solid black; */
+    
+    opacity: 9;
+
+}
+nav{
+    height: 75px;
+    width: 100%;
+    background-color:white;
+}
+.items{
+    display: none;
+}
+
+lable.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 0px 100px;
+    line-height: 70pxpx;
+
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline;
+    margin: 8px;
+    line-height: 0px 80px;
+}
+nav a{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border:ipx solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+}
+a.active,a:hover{
+    border:1px solid black;
+    transition: .5s;
+
+}
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right:40px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+@media (max-width:1048px) {
+    lable.logo{
+        font-size: 32px;
+        padding-left: 60px;
+
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+
+    }
+}
+option a:hover{
+    background-color: rgb(156, 223, 223);
+}
+/* #opt{
+    padding: 10px;
+    height: 35px;
+    width: 100px;
+} */
+
+    @media (max-width:909px) {
+        nav #icon{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2f3640;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: .5s;
+        }
+        nav li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav a{
+            font-size: 20px;
+            color: White;
+
+        }
+        a.active,a:hover{
+            border: none;
+            color: #3498db;
+        }
+        nav ul.show{
+            left: 0;
+
+        }
+
+
+    }
+
+
+
+</style>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        })
+
+    })
+  </script>
+</head>
+
+<!-- <ul  class="container">
+    <li class="items"><a href="#">Cricket</a></li>
+    <li class="items"><a href="#">Basket ball</a></li>
+    <li class="items"><a href="#">Chess</a></li>
+    <li class="items"><a href="#">Carrom</a></li>
+    <li class="items"><a href="#">Football</a></li>
+    <li class="items"><a href="#">Volleyball</a></li>
+</ul> -->
+<body>
+    <nav>
+        <label calss="logo">
+            <img id="img1" src="static/images/logo-seg-1-removebg-preview.png" alt="">
+
+        </label>
+        
+            <ul>
+                <li><a href="#Home" class="nav-itemss">Home</a></li>
+                <li><a href="/admin" class="nav-itemss">For Administration</a></li>
+                <li><a href="/notify" class="nav-itemss">Updates</a></li>
+              <div class="dropdown">
+                    <span class="dropbtn gal" style="color:black;">GALLERY</span> <br>
+                    <div class="dropdown-content">
+                    <a  target="_blank"  href="/gallery">Cricket</a>
+                                     <a  target="_blank" href="/gallery">Volleyball</a>
+                                    <!-- <a  target="_blank"  href="/gallery">chess</a> -->
+                                    <!-- <a  target="_blank"  href="/gallery">Table Tennis</a> -->
+                                    <a  target="_blank"  href="/gallery">Badminton</a>
+                                    <!-- <a  target="_blank" href="/gallery">carrom</a> -->
+                                    <a  target="_blank"  href="/gallery">Basketball</a>
+                                     <a  target="_blank" href="/gallery">Football</a>
+                    </div>
+                </div>
+                <div class="dropdown  register1">
+                    <span class="dropbtn register-txt" style="color:black;" >REGISTER HERE</span>
+                    <div class="dropdown-content">
+                    <a  target="_blank"  href="/cricket_registration">Cricket</a>
+                                 <a  target="_blank" href="/volleyball_registration">Volleyball</a>
+                                    <!--<a  target="_blank"  href="/chess_registration">chess</a> -->
+                                    <!-- <a  target="_blank"  href="form_table_tennis.html">Table Tennis</a> -->
+                                    <a  target="_blank"  href="/badminton_registration">Badminton</a>
+                                    <!--<a  target="_blank" href="/carrom_registration">carrom</a> -->
+                                    <a  target="_blank"  href="/basketball_registration">Basketball</a>
+                                    <a  target="_blank" href="/football_registration">Football</a>
+                    </div>
+                </div>
+            </ul>
+        <lable id="icon">
+            <i class="fas fa-bars"></i>
+        </lable>
+    </nav>
+
+<!--
+
+    <img src="static/images/marathon-250987_640.jpg" alt="refreh" class="header-img">-->
+    <div class="image-container">
+        <div id="imageWrapper">
+            <img src="static/images/game0.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game1.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game5.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game0.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game3.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game1.jpg" alt="Uploaded Image" class="header-img">
+            <img src="static/images/game4.jpg" alt="Uploaded Image" class="header-img">
+        </div>
+        <button type="button" id="prevButton" class="btn-left">&lt;</button>
+        <button type="button" id="nextButton" class="btn-right">&gt;</button>
+    </div>
+    <br><br><br><br><br> 
+    
+    <div class="update-marquee">
+        <div class="new-icon">New</div>
+        <marquee behavior="scroll" direction="left">
+            <ul>
+                {% for update in event_updates %}
+                    <li>
+                        <a href="/notify" class="notification-link">
+                            <div class="notification-text">
+                                <h2>{{ update[0] }}</h2>
+                                <p>{{ update[1] }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </marquee>
+    </div>
+    
+          
+        </header>
+        <!-- <img src="images.png" alt="refreh" class="front-home-inside-img"> -->
+        <br><br>
+        <h1 class="sanskar-name">Sports Register and Participate</h1>
+        <main id="Protocals">
+            <div class="game-container item" id="Gamess">
+                <div id="vollyball" class="games">
+                    <img src="static/images/volleyball.jpg" alt=""
+                        id="vollyball-img">
+                        <div class="para">Volleyball</div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://asi.cpp.edu/campusrec/wp-content/uploads/2018/05/FINAL-2017-Volleyball-Rules.pdf"
+                            style="text-decoration: none;color: black; border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/volleyball_registration" style="text-decoration: none; color: black; border: none;">Registration form
+
+                        </a>
+                    </button>
+            
+
+
+                    <button class="glow-on-hover" type="button"><a href="" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+
+                </div>
+                <div id="baskitball" class="games item">
+                    <!-- <span id="Basketball">Basketball</span> -->
+                    <img src="static/images/basketball.jpg" alt=""
+                        id="vollyball-img">
+                        <div class="para"><a href="/gallery" class="game-name" style="text-decoration: none; border: none; color: white;">Basketball</a></div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://web.mst.edu/~ima/rules/Basketball%20Rules.pdf"
+                            style="text-decoration: none; color: black; border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/basketball_registration" style="text-decoration: none; color: black; border: none;">Registration form
+
+                        </a>
+                    </button>
+                    <button class="glow-on-hover" type="button"><a href="/notify" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div>
+                <!--<div id="badminton" class="games item">
+                    <span id="Basketball">Basketball</span>
+                    <img src="static/images/240_F_92331678_qRdATPZLpw9Zoj3WdhbcrxvYINvMc7ZI copy.jpg" alt="refresh"
+                        id="vollyball-img">
+                        <div class="para" style="text-align: center;"><a href="/gallery" class="game-name" style="text-decoration: none; border: none;color: white;">Badminton</a></div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://www.auburn.wednet.edu/cms/lib/WA01001938/Centricity/domain/2538/game%20rules/Badminton%20Rules.pdf"
+                            style="text-decoration: none; color: black; border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/badminton_registration" style="text-decoration: none; color: black; border: none;">Registration form
+
+                        </a>
+                    </button>
+                    <button class="glow-on-hover" type="button"><a href="/notify" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div>
+
+                 <div id="tabletennis" class="games item">
+                     <span id="Basketball">Basketball</span>
+                     <img src="240_F_162762679_m5YRH2x4BUgsspADtZpnwRBJdIoe7VOk.jpg" alt="refresh"
+                        id="vollyball-img">
+                        <div class="para" style="text-align: center;">Tabletennis</div>
+                    
+                        <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://crec.unl.edu/im/rules/Table_Tennis.pdf"
+                            style="text-decoration: none; color: black;border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="form_table_tennis.html" style="text-decoration: none; color: black;border: none;">Registration form
+
+                        </a>
+                    
+                    </button>
+                    <button class="glow-on-hover" type="button"><a href="" style="text-decoration: none; color: white;border: none;">Result</a></button>
+                </div> -->
+                <div id="cricket" class="games item">
+                    <img src="static/images/cricket.jpg" alt="" id="vollyball-img">
+                    <div class="para"><a href="/gallery" class="game-name" style="text-decoration: none; border: none;color: white;">Cricket</a></div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="http://gdca.vic.cricket.com.au/files/29/files/umpiring_for_beginners.pdf"
+                            style="text-decoration: none;color: black;border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/cricket_registration" style="text-decoration: none;color: black;border: none;">Registration form
+
+                        </a>
+                    </button>
+                    <button class="glow-on-hover" type="button"><a href="/notify" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div>
+                <div id="chess" class="games item">
+                    <img src="static/images/chess.jpg"
+                        alt="" id="vollyball-img">
+                        <div class="para"><a  href="/gallery" class="game-name" style="text-decoration: none; border: none;color: white;">Chess</a></div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://cdn.shptrn.com/media/mfg/1725/media_document/8976/Imp_ChessR.pdf?1401227342"
+                            style="text-decoration: none;color: black; border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/chess_registration" style="text-decoration: none;color: black; border: none;">Registration form
+
+                        </a>
+                    </button>
+                    
+                    <button class="glow-on-hover" type="button"><a href="/notify" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div>
+                <!--
+                <div id="carrom" class="games item">
+                    <img src="static/images/carrom.jpg"
+                        alt="" id="vollyball-img">
+                        <div class="para"><a  href="/gallery" class="game-name" style="text-decoration: none; border: none;color: white;">Carrom</a></div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="https://www.getrushapp.com/assets/pdfs/RulesToPlayCarrom%20Game.pdf"
+                            style="text-decoration: none;color: black;border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/carrom_registration" style="text-decoration: none; color: black;border: none;">Registration form
+
+                        </a>
+                    </button>
+                    
+                    <button class="glow-on-hover" type="button"><a href="/notify" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div> -->
+                <div id="football" class="games item">
+                    <img src="static/images/football.jpg"
+                        alt="" id="vollyball-img">
+                        <div class="para">Football</div>
+                    <button class="Protocols-btn" id="Protocols-btn">
+                        <a href="http://www.ccsasoccer.org/uploads/7/2/9/0/72906803/soccer_rules_1.pdf"
+                            style="text-decoration: none;color: black;border: none;">Protocols
+
+                        </a>
+                    </button>
+                    <button class="Protocols-btn1" >
+                        <a href="/football_registration" style="text-decoration: none;color: black;border: none;">Registration form
+
+
+                        </a>
+                    </button>
+                    
+                    <button class="glow-on-hover" type="button"><a href="" style="text-decoration: none; color: white;border: none;">Updates</a></button>
+                </div>
+            </div>
+        </main>
+        <br><br>
+        <center><h1 style="text-decoration:underline;">GALLERY</h1><center>
+        <br>
+        <div class="above_footer">
+            <div class="image-container">
+                <div id="imageWrapper1">
+                    {% for image_path in image_paths %}
+                        <img src="{{ image_path }}" alt="Uploaded Image" class="header-img">
+                    {% endfor %}
+                </div>
+               <!--<button type="submit" name="direction" value="prev" id="prevButton" class="btn-left">&lt;</button>
+               <button type="submit" name="direction" value="next" id="nextButton" class="btn-right">&gt;</button> -->
+           </div>
+            
+    </div>
+    <br><br><br><br>
+        
+        <!--<footer id="#footer">
+            
+                <p>&copy; 2023 Your Sports Website</p>
+                <p>Contact: info@sportswebsite.com</p>
+                <p>Developed By Rohan Sharma,Lakender Tyagi,Sahil Ali,Satyanarayan Prajapati</p>
+            </div>
+        </footer>-->
+        <script>const imageWrapper = document.getElementById("imageWrapper");
+            const prevButton = document.getElementById("prevButton");
+            const nextButton = document.getElementById("nextButton");
+            
+            const imageWidth = 100; // Adjust this to the width of a single image
+            let scrollPosition = 0;
+            
+            prevButton.addEventListener("mouseover", () => {
+                scrollPosition += imageWidth; // Move to the previous image
+                if (scrollPosition > 0) {
+                    // If we go beyond the first image, loop to the last image
+                    const lastImage = imageWrapper.lastElementChild.cloneNode(true);
+                    imageWrapper.insertBefore(lastImage, imageWrapper.firstElementChild);
+                    imageWrapper.lastElementChild.remove();
+                    scrollPosition = -imageWidth;
+                }
+                updateScrollTransform();
+            });
+            
+            nextButton.addEventListener("mouseover", () => {
+                scrollPosition -= imageWidth; // Move to the next image
+                if (scrollPosition <= -imageWidth) {
+                    // If we go beyond the last image, loop to the first image
+                    const firstImage = imageWrapper.firstElementChild.cloneNode(true);
+                    imageWrapper.appendChild(firstImage);
+                    imageWrapper.firstElementChild.remove();
+                    scrollPosition = -imageWidth;
+                }
+                updateScrollTransform();
+            });
+            
+            function updateScrollTransform() {
+                imageWrapper.style.transform = `translateX(${scrollPosition}%)`;
+            }
+            
+            </script>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Sanskar<span>College</span></h3>
+
+        <p class="footer-links">
+          <a href="#Home" class="link-1">Home</a>
+
+          <a href="admin.html">For Administration</a>
+
+          <a href="/notify">Updates</a>
+
+          <a href="img.html">Gallery</a>
+
+          <a href="#register">Registration</a>
+        </p>
+
+        <p class="footer-company-name">Sanskar Educational Group © 2023</p> <br>
+          <p class="footer-company-name" style="color:white;font-size:30px;">Developed By:</p>
+          <p><a target="_blank" href="https://www.linkedin.com/in/rohan-sharma-62165823b" style="text-decoration:None;color:white;font-size:1rem;">Rohan Sharma</a><br>
+          <a target="_blank" href="https://www.linkedin.com/in/lakender-tyagi-991250226" style="text-decoration:None;color:white;font-size:1rem;">Lakender Tyagi</a><br>
+              <a target="_blank" href="https://www.linkedin.com/in/sahil-ali-1b83a421a" style="text-decoration:None;color:white;font-size:1rem;">Sahil Ali</a><br></p>
+    </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>NH-24,
+            Opp. Jindal Nagar,<br></span> Ghaziabad-201302,<br> Delhi-NCR</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 7251000120</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">info@sanskar.org</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the College</span>
+          SEG Ghaziabad was ranked 5th in Uttar Pradesh according to the AKTU Merit List. The ranking was given based on the performance of the students in university examinations. Sanskar Educational Group's College of Pharmacy was ranked in the 2nd place in NCR as per the AKTU Merit List.
+        </p>
+
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/sanskar_educational_group/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2FSanskarGhaziabad%2F" class="fa-brands fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/sanskar-ghaziabad/"   class="fa-brands fa-linkedin"></a>
+          <a href="https://www.youtube.com/channel/UCJmT3wexIq9ekJYTLlZbFZQ" class="fa-brands fa-youtube"></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/style.js"></script>
+</head>
+<body bgcolor="gold" font-color="red" class="form-body">
+<div class="upper-container">
+<div class="form-container">
+<form action="/chess_registration" method="POST">
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center>
+<tr>
+   <td><h1>Registration For Chess</h1></td>
+</tr>
+</center></table>
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+    <br>
+    <tr> <td>&nbsp;</td></tr>
+    <tr> <td>&nbsp;</td></tr>
+    <tr>
+        <td align='start'>Full Name*:</td>
+        <td><input type='text' id="name" name='teamname' placeholder="Rohan" required></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td align='start'>Phone*:</td>
+        <td><input type='tel' id="phone" name='phone' placeholder="1234567890" required></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td align='start'>Email*:</td>
+        <td><input type='email' id="email" name='email' placeholder="xyz@gmail.com" required></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td align='start'>Student Id*:</td>
+        <td><input type='text' id="Student-Id" name='student_id' placeholder="20cs034" required>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td align='start'>Course:</td>
+        <td><select name="course" id="year" style="width: 168px; text-align: center; " required>
+                <option value="B.Tech">B.Tech</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Polytechnic">Polytechnic</option>
+                <option value="Management">Management</option>
+                <option value="Other">Other</option>
+            </select></td>
+
+    <tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <td align='start'>Year*:</td>
+        <td><select name="year" id="year" style="width: 168px; text-align: center; " required>
+                <option value="none">none</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select></td>
+    </tr>
+  <tr> 
+    <td>&nbsp;</td> 
+  </tr>
+  </table><table>
+<tr>
+    <td> <h2>Enter Names of Chess Player</h2>
+<br>
+        <label for="player1">Player Name*:</label>
+        <input type="text" required id="player1" name="player1" placeholder="Player Name "><br>
+
+        </td>
+</tr>
+
+
+<tr> <td>&nbsp;</td> </tr>
+<table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+<tr>
+    <td align='center'><input type='submit' onclick="aleartfunc()" class="submit" name='REGISTER' value="register" ></td>
+</tr>
+</table>
+</table>
+
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

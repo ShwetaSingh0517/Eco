@@ -1,0 +1,506 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Remove scrollbars from specific components */
+.component-without-scrollbar {
+    overflow: hidden;
+}
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Table Styles */
+.table-style {
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+.table-style th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 8px; /* Reduced padding */
+    text-align: left;
+}
+
+.table-style tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-style tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-style td {
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    max-width: 150px; /* Reduced column width */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.admin-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    background-color: #f8f8f8;
+}
+
+.content-center {
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eeff00; /* Red background color */
+    color: black; /* White text color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+/* Define the hover effect */
+.button-style:hover {
+    background-color: rgb(255, 115, 0); /* Lighter red background color on hover */
+    /* White text color on hover */
+}
+
+
+.container {
+
+    width: 40%;
+}
+
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+}
+
+h1 {
+    color: #333;
+}
+
+.admin-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    background-color: #f8f8f8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.User_Id_form {
+    box-shadow: 0px 0px 30px black;
+    width: 50vw;
+    height: 300px;
+    background-color: rgb(233, 194, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* flex-wrap: wrap;*/
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.User_Id_form1{
+    box-shadow: 0px 0px 30px black;
+    width: 95%;
+    height: 300px;
+    background-color: rgb(150, 153, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* flex-wrap: wrap;*/
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+
+/* Style the main container */
+.User_Id_form00 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Style headings */
+h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Style the "Add" and "Delete" forms within the same line */
+.add-coordinator, .delete_coordinator {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%; /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style the "Add" form */
+.add-coordinator {
+    background-color: #e0e0e0;
+}
+
+/* Style the "Delete" form */
+.delete_coordinator {
+    background-color: #f0f0f0;
+}
+
+/* Style the table (List of Coordinators) */
+.list_coordinators {
+    display: block;
+    margin: 20px 0;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table headings */
+th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.form-container {
+    margin: 10px 0;
+}
+
+.green-text {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.btn {
+    background-color: rgb(243, 31, 31);
+    color: white;
+    width: 112px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0px white;
+    margin-left: 124px;
+    margin-top: 44px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* flex-wrap: wrap;*/
+    margin-top: 20px;
+}
+
+.delete_user {
+    width: 50vw;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(206, 151, 151), rgb(153, 168, 177));
+    color: black;
+    font-size: larger;
+}
+
+.delete-btn {
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: rgb(252, 135, 135);
+
+}
+
+.list_admin {
+    width: 96vw;
+    height: 250px;
+    justify-content: space-around;
+  /*  flex-wrap: wrap;*/
+    background-image: linear-gradient(to right, rgb(127, 195, 218), gray);
+}
+.btn-download-list,
+.btn-download-list1 {
+    width: 200px; /* Adjust the width as needed */
+    height: 40px;
+    border: none; /* Remove border to improve aesthetics */
+    background-color: rgb(117, 170, 194);
+    border-radius: 20px;
+    display: flex; /* Center the content horizontally and vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Text color */
+    font-weight: bold; /* Make the text bold for better visibility */
+    text-decoration: none; /* Remove underlines for links */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
+}
+
+.btn-download-list1 {
+    background-color: rgb(84, 23, 119);
+    width: 200px; /* Adjust the width as needed */
+}
+
+.btn-download-list:hover,
+.btn-download-list1:hover {
+    background-color: rgb(57, 44, 235);
+    color: #333;
+}
+
+
+h1 {
+    color: #333; /* Title color */
+}
+
+/* Custom file upload button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the file input inside the custom button (hidden) */
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+/* Button hover effect */
+.custom-file-upload:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Upload button style */
+.btn-upload {
+    padding: 10px 20px;
+    background-color: #28a745; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space between buttons */
+}
+
+/* Upload button hover effect */
+.btn-upload:hover {
+    background-color: #1d8c34; /* Button background color on hover */
+}
+
+.btn1 {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.upperdv {
+    display: flex;
+
+
+}
+
+.list_student {
+    box-shadow: 0px 0px 30px black;
+    border-radius: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(131, 147, 167), rgb(211, 206, 164));
+}
+
+#Logout{
+    border: 1px solid blue;
+    border-radius: 43px;
+    margin-left: -421px;
+    width: 74px;
+    height: 40px;
+    padding: 3px;
+    margin-right: 164px;
+    background-color: #9a5151;
+}
+
+
+
+
+.btn-danger {
+    left: 100px;
+}
+
+.deletebtn {
+    display: flex;
+    justify-content: center;
+}
+
+.main_heading {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 4px;
+    width: 96vw;
+    height: 14vh;
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(182, 208, 211), rgb(67, 94, 102));
+}
+
+.form-control {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.Add-admin {
+    background-image: linear-gradient(to right, rgb(185, 145, 145), rgb(162, 200, 221));
+    font-size: larger;
+}
+.upper_download_list1{
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    color: aqua;
+}
+.upper_download_list2{
+    width: 150vw;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 0%;
+
+}
+@media screen and (max-width: 1200px) {
+    .upperdv{
+        flex-direction: column;
+    }
+    .User_Id_form{
+        width: auto;
+    }
+    .Add-admin{
+        width:auto;
+    }
+    .main_heading{
+        width: auto;
+    }
+    .list_student{
+        width: auto;
+    }
+}
+/* Media Query for Mobile Devices (e.g., up to 768px width) */
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+
+    .admin-form,
+    .User_Id_form,
+    .User_Id_form1,
+    .list_student,
+    .list_admin {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .table-style {
+        font-size: 12px;
+    }
+
+    /* Input field styles for mobile */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* Label styles for mobile */
+    label {
+        font-size: 16px;
+    }
+
+    /* Adjust other styles as needed for mobile devices */
+}

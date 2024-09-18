@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="shortcut icon" href="static/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/notify.css">
+</head>
+<body class="notify_body">
+    <div class="home_notify" style="height:100%;width:100%; border:2px solid red; padding:50px">
+    <a href="/" style="color:white;"><i class="fa-solid fa-house" >Home</i></a>
+    <br>
+    <div class="area" style="margin-top:20px;">
+        <div class="notification">
+            <h1>Updates &nbsp;</h1><br>
+            <div style="border: 4px solid red; width: 140%; background-color: white; padding: 20px;">
+                {% for update in event_updates %}
+                <center>
+                    <div class="formatted-text">
+                        <p>{{ update }}</p>
+                    </div>
+                </center>
+                {% endfor %}
+            </div>
+        </div>
+
+        <ul class="circles">
+            <li>Error</li>
+            <li>Sanskar</li>
+            <li>College</li>
+            <li>Event</li>
+            <li>Youth</li>
+            <li>Developers</li>
+            <li>Sahil</li>
+            <li>Rohan</li>
+            <li>Lakender</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

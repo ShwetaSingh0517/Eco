@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Site Metas -->
+   <title>NIET Sports</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+   <link rel="apple-touch-icon" href="">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="static/style.css">
+   <!-- Colors CSS -->
+   <link rel="stylesheet" href="static/css/colors.css">
+   <!-- ALL VERSION CSS -->	
+   <link rel="stylesheet" href="static/css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="static/css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="static/css/custom.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- font family -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <!-- end font family -->
+   <link rel="stylesheet" href="static/css/3dslider.css" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   <script src="static/js/3dslider.js"></script>
+   <style>
+    .dropbtn {
+  background-color: #ffffff;
+  color: rgb(31, 30, 30);
+  margin-top: 24px;
+  /* padding: 15px; */
+  font-size: 16px;
+  border: none;
+  font-weight: 410;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.regs:hover{
+   background-color: #fff;
+   
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(59, 58, 58);
+ display: flex; 
+ flex-direction: row;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  /* background-color: #ddd;*/
+  color: rgb(223, 72, 72);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: flex;
+   
+   filter: invert(1);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color: #f7f7f7;*/
+  color: rgb(223, 72, 72);
+}
+   </style>
+   </head>
+   <body class="game_info" data-spy="scroll" data-target=".header">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="images/loading-img.gif" alt="">
+      </div>
+      <!-- END LOADER -->
+      <section id="top">
+         <header>
+            <div class="container">
+               <div class="header-top">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="full">
+                           <div class="logo">
+                              <a href="/"><img src="static/images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="right_top_section">
+                           <!-- social icon -->
+                           <ul class="social-icons pull-left">
+                              <li><a class="facebook" href="https://www.facebook.com/NIET.Gr.Noida"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="https://www.instagram.com/nietgreaternoida/" ><i class="fa fa-instagram"></i></a></li>
+                              <li><a class="youtube" href="https://www.youtube.com/channel/UCPx0fIQFOuiWtOa9BAAFDpw" ><i class="fa fa-youtube-play"></i></a></li>
+                              <li><a class="pinterest" href="https://www.linkedin.com/school/noida-institute-of-engineering-technology/" ><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                           <!-- end social icon -->
+                           <!-- button section -->
+                           <ul class="login">
+                              <li class="login-modal">
+                                 <a href="/admin" class="login"><i class="fa fa-user"></i>Administration</a>
+                              </li>
+                              <li>
+                                 <div class="cart-option">
+                                    <a href="/about"> <i class="fa-solid fa-house"></i>About</a>
+                                 </div>
+                              </li>
+                           </ul>
+                           <!-- end button section -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-bottom ">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="full">
+                           <div class="main-menu-section">
+                              <div class="menu">
+                                 <nav class="navbar navbar-inverse">
+                                    <div class="navbar-header">
+                                       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       </button>
+                                       <a class="navbar-brand" href="#">Menu</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                       <ul class="nav navbar-nav">
+                                          <li class="active"><a href="/">Home</a></li>
+                                          <li id="hidden-admin"><a href="/admin">Administration</a></li>
+                                          <li><a href="/gallery">Gallery</a></li>
+                                          <li class="dropdown mega-dropdown">
+                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Updates<span class="caret"></span></a>				
+                                             <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-8">
+                                                   <ul>
+                                                      <li class="dropdown-header">Top 3 Latest Updates</li>
+                                                      <div id="menCollection" class="carousel slide" data-ride="carousel">
+                                                         <div class="carousel-inner">
+                                                            <div class="item active">
+                                                               <div class="banner-for-match"><a href="#">{{event_updates[0]}}</a></div>
+                                                            </div>
+                                                            {% for update in event_updates[1:] %}
+                                                               <div class="item">
+                                                                  <div class="banner-for-match"><a href="/notify">{{update}}</a></div>
+                                                               </div>
+                                                            {% endfor %}                               
+                                                         </div>
+                                                         <!-- End Carousel Inner -->
+                                                         <!-- Controls -->
+                                                         <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                         <span class="sr-only">Previous</span>
+                                                         </a>
+                                                         <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                         <span class="sr-only">Next</span>
+                                                         </a>
+                                                      </div>
+                                                      <!-- /.carousel -->
+                                                   </ul>
+                                                </li>
+                                                <li class="col-sm-4">
+                                                   <ul class="menu-inner">
+                                                      <li class="dropdown-header">Top Updates</li>
+                                                      {% for update in event_updates01 %}
+                                                         <li><a href="/notify">{{ update }}</a></li>
+                                                      {% endfor %}
+                                                   </ul>
+                                                </li>
+                                             </ul>
+                                             <!-- <li class="dropdown mega-dropdown">
+                                                <a href="match" class="dropdown-toggle" data-toggle="dropdown">Register Here<span class="caret"></span></a>				
+                                                <ul class="dropdown-menu mega-dropdown-menu">
+                                                   <li class="col-sm-4">
+                                                      <ul class="menu-inner">
+                                                         <li class="dropdown-header">Forms Link</li>
+                                                         <li><a cla="html forms/cricket2.2.html">Cricket</a></li>
+                                                         <li><a cla="html forms/football_form.html">Football</a></li>
+                                                         <li> <a href="html forms/vollyball_form.html">VolleyBall</a></li>
+                                                         <li> <a href="html forms/Basketball_form.html">BasketBall</a></li>
+                                                         <li> <a href="html forms/Badmintion_form.html">Badminton</a></li>
+                                                      </ul>
+                                                   </li>
+                                                </ul>
+                                          </li>
+                                          <li class="dropdown mega-dropdown">
+                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Protocals<span class="caret"></span></a>				
+                                             <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-4">
+                                                   <ul class="menu-inner">
+                                                      <li class="dropdown-header">Protocals</li>
+                                                      <li><a href="http://gdca.vic.cricket.com.au/files/29/files/umpiring_for_beginners.pdf">Cricket</a></li>
+                                                      <li><a href="http://www.ccsasoccer.org/uploads/7/2/9/0/72906803/soccer_rules_1.pdf">Football</a></li>
+                                                      <li> <a href="https://asi.cpp.edu/campusrec/wp-content/uploads/2018/05/FINAL-2017-Volleyball-Rules.pdf">VolleyBall</a></li>
+                                                      <li> <a href="https://web.mst.edu/~ima/rules/Basketball%20Rules.pdf">BasketBall</a></li>
+                                                      <li> <a href="https://www.auburn.wednet.edu/cms/lib/WA01001938/Centricity/domain/2538/game%20rules/Badminton%20Rules.pdf">Badminton</a></li>
+                                                   </ul>
+                                                </li>
+                                             </ul>
+                                       </li> -->
+                                          <li id="regis">
+                                             <div class="dropdown">
+                                              <p class="dropbtn newdrop">Guidlines</p>
+                                              <div class="dropdown-content">
+                                                <a href="http://gdca.vic.cricket.com.au/files/29/files/umpiring_for_beginners.pdf">Cricket</a>
+                                                <a href="http://www.ccsasoccer.org/uploads/7/2/9/0/72906803/soccer_rules_1.pdf">Football</a>
+                                                <a href="https://asi.cpp.edu/campusrec/wp-content/uploads/2018/05/FINAL-2017-Volleyball-Rules.pdf">VolleyBall</a>
+                                                <a href="https://web.mst.edu/~ima/rules/Basketball%20Rules.pdf">BasketBall</a>
+                                                <a href="https://www.auburn.wednet.edu/cms/lib/WA01001938/Centricity/domain/2538/game%20rules/Badminton%20Rules.pdf">Badminton</a>
+                                              </div>
+                                          </li> 
+                                           <li id="regis" style="margin-left: 15px; padding: 0%;"><div class="dropdown">
+                                            
+                                             <p class="dropbtn newdrop">Register Here</p>
+                                             <div class="dropdown-content">
+                                               <a href="/cricket_registration">Cricket</a>
+                                               <a href="/football_registration">Football</a>
+                                               <a href="/volleyball_registration">VolleyBall</a>
+                                               <a href="/basketball_registration">BasketBall</a>
+                                               <a href="/badminton_registration">Badminton</a>
+                                             </div>
+                                           </div>
+                                          </li>
+                                          <li><a href="#footer">Contact Us</a></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.nav-collapse -->
+                                 </nav>
+                                 <div class="search-bar">
+                                    <div id="imaginary_container">
+                                       <div class="input-group stylish-input-group" style="background-color: transparent;">
+                                          <!-- <input type="text" class="form-control"  placeholder="Search" >form-control -->
+                                          <!-- <span class="input-group-addon" style="background-color: transparent;"> -->
+                                          <!-- <button type="submit"></button>   -->
+                                          <!-- </span> -->
+                                          <img src="static/images/logo-seg-1-removebg-preview.png" alt="" style="width: 200px; height: 55px; margin-left: 30px;">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="full-slider">
+            <div id="carousel-example-generic" class="carousel slide">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox">
+                  <!-- First slide -->
+                  <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
+                              <p>Experience is a hard teacher because she gives the <br> test first, the lesson afterward.... <br>
+                                 Efficiency is doing better than what is already being done....
+                              </p>
+                              <button class="btn btn-primary btn-lg"><a href="#" style="color: white; text-decoration: none;">For Next...</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+                  <!-- Second slide -->
+                  <div class="item skyblue" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
+                              <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
+                              <button class="btn btn-primary btn-lg">For Next...</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+                  <!-- Third slide -->
+                  <div class="item darkerskyblue" data-ride="carousel" data-interval="5000" id="img3rd">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
+                              <p>Experience is a hard teacher because she gives the <br> test first, the lesson afterward.... <br>
+                                 Efficiency is doing better than what is already being done....
+                              </p>
+                              <button class="btn btn-primary btn-lg">For Next...</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+               </div>
+               <!-- /.carousel-inner -->
+               <!-- Controls -->
+               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <!-- /.carousel -->
+            <div class="news">
+               <div class="container">
+                  <div class="heading-slider">
+                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> Top Headlines :</p>
+                     <ul>
+                       
+                    </ul>
+                     <h1>
+                     <a href="" class="typewrite" data-period="2000" data-type='[ "{{event_updates[0]}}"]'>
+                     <span class="wrap"></span>
+                     </a>
+                  </h1>   
+                     <span class="wrap"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div style="display:flex; flex-direction:row; flex-wrap:wrap; " class="matchs-info">
+         <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+               <div class="full">
+                  <div class="matchs-vs" style="height:20px; background-image:url('static/images/cycling.jpg')">
+                     <div style="display:flex; justify-content:center;align-item:center;" class="vs-team">
+                        <div class="team-btw-match">
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div class="matchs-vs" style="height:30px; background-color:yellow;color:black;">
+                  <div class="vs-team">
+                     <div class="team-btw-match">
+                        <ul>
+                           <li>
+                              <ul>
+                                 <li>
+                                    <h3>Current Sports Event</h3>
+                                    <h1>{{current_sport}}</h1>
+                                 </li>
+                                 <br><br>
+                              </ul>  
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  
+               </div>
+
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+               <div class="full">
+                  <div class="right-match-time">
+                     <h2>Next Sports</h2>
+                     <ul id="countdown-1" class="countdown">
+                        <h4>Next Sport:</h4>
+                        <h2>{{ next_sport }}</h2>
+                    
+                        <h4>Organized in:</h4>
+                        <h2>{{ month_l[time_to_next_game-1] }}</h2>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section id="contant" class="contant">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="static/images/clg/image5.JPG" alt="#" />
+                        <h3>teamwork begins by building trust. ...</h3>
+                     </div>
+                  </aside>
+                  <h4> Faculty Cordinater</h4>
+                  <aside id="sidebar" class="left-bar">
+                     <div class="feature-matchs">
+                        <table class="table table-bordered table-hover">
+                           <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>Name</th>
+                                 <th>Game Name</th>
+                                 <!-- <th>W</th>
+                                 <th>L</th> -->
+                              </tr>
+                           </thead>
+                           <tbody>
+                              {% for key, value in coordinators.items(): %}
+                                  <tr>
+                                      <td>{{ loop.index }}</td>
+                                      <td>{{ key }}</td>
+                                      <td>{{ value }}</td>
+                                  </tr>
+                                  {% endfor %}
+                           </tbody>
+                        </table>
+                     </div>
+                  </aside>
+                  <h4> Student Cordinater</h4>
+                  <aside id="sidebar" class="left-bar">
+                     <div class="feature-matchs">
+                        <table class="table table-bordered table-hover">
+                              <thead>
+                                  <tr>
+                                      <th>#</th>
+                                      <th>Name</th>
+                                      <th>Game Name</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  {% for key, value in s_coordinators.items(): %}
+                                  <tr>
+                                      <td>{{ loop.index }}</td>
+                                      <td>{{ key }}</td>
+                                      <td>{{ value }}</td>
+                                  </tr>
+                                  {% endfor %}
+                              </tbody>
+                          </table>
+                     </div>
+                  </aside>
+                  <div class="content-widget top-story" style="background: url(static/images/top-story-bg.jpg);">
+                     <div class="top-stroy-header">
+                        <h2>Top Updates <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
+                        <span class="date">Dates</span>
+                        <h2>Updates</h2>
+                     </div>
+                     <ul class="other-stroies">
+                        {% for update in event_updates01 %}
+                        <li><a href="/notify">{{ update }}</a></li>
+                     {% endfor %}
+                     </ul>
+                  </div>
+                  <aside id="sidebar" class="left-bar">
+                     <div class="feature-matchs">
+                        <!-- <img src="static/images/HD-wallpaper-virat-kohli-t20-odi-test-cricket-cricket-18-wtc-india-thumbnail.jpg" alt="India Img" style="width: 100%;">-->
+                        <img src="static/images/clg/img4.jpg" alt="India Img" style="width: 100%;">
+                     </div>
+                  </aside>
+               </div>
+               <div class="col-lg-8 col-sm-8 col-xs-12">
+                  <div class="news-post-holder">
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="static/images/img-01_002.jpg" alt="">
+                        <div class="news-post-detail">
+                           <span class="date">Football</span>
+                           <h2 style="color: rgb(63, 63, 237);">“ Self-praise is for losers. Be a winner. Stand for something. Always have class, and be humble.”</h2>
+                           <p>“Don’t give up at half time. Concentrate on winning the second half.”</p>
+                        </div>
+                     </div>
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="static/images/clg/img2.jpg" alt="" style="width: 748px; height: 523px;">
+                        <div class="news-post-detail">
+                           <span class="date">Baskitball</span>
+                           <h2 style="color: rgb(63, 63, 237);">"It´s not how big you are, it´s how big you play." </h2>
+                           <p> In basketball, as in life, true joy comes from being fully present in each and every moment, not just when things are going your way.- Phil Jackson</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-post-holder">
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="static/images/clg/imgtn.JPG" alt="" style="width: 748px; height: 420px;">
+                        <div class="news-post-detail">
+                           <span class="date">Badminton</span>
+                           <h2 style="color: rgb(63, 63, 237);">" If you can bang, you can hang."</h2>
+                           <p>The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will. —Vincent T. Lombardi</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <div class="main-heading sytle-2">
+                        <h2>Video</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>doloremque laudantium, totam rem aperiam</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="video_section_main theme-padding middle-bg vedio">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <div class="match_vedio">
+                        <img class="img-responsive" src="images/img-07.jpg" alt="#" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <div class="team-holder theme-padding">
+         <div class="container">
+            <div class="main-heading-holder">
+               <div class="main-heading sytle-2">
+                  <h2>Developing Team</h2>
+                  <p>Programmers seem to be changing the world. It would be a relief, for them  <br>and for all of us, if they knew something about it.  – Ellen Ullman</p>
+               </div>
+            </div>
+            <div id="team-slider">
+               <div class="container">
+                  <!-- <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="static/images/clg/shweta.jpg" alt="" style="height: 368px ;width: 250px;">
+                        <div class="player-name">
+                           <div class="desination-2">Front End</div>
+                           <h5>Shweta Singh </h5>
+                           <span class="player-number">MCA</span>
+                        </div>
+                        <div class="overlay">
+                           <div class="team-detail-hover position-center-x">
+                              <p>Lacus vulputate torquent mollis venenatis quisque suspendisse fermentum primis,</p>
+                              <ul class="social-icons style-4 style-5">
+                                 <li><a class="facebook" href="#" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a class="twitter" href="#" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a class="youtube" href="#" tabindex="0"><i class="fa fa-youtube-play"></i></a></li>
+                                 <li><a class="pinterest" href="#" tabindex="0"><i class="fa fa-pinterest-p"></i></a></li>
+                              </ul>
+                              <a class="btn blue-btn" href=" /soccer/team-detail.html" tabindex="0">View Detail</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                 -->
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="static/images/clg/shweta.jpg" alt="extra" style="height: 368px ;width: 250px;">
+                        <div class="player-name">
+                           <div class="desination-2">Front End,Backend</div>
+                           <h5>Shweta Singh</h5>
+                           <span class="player-number">MCA</span>
+                        </div>
+                     </div>
+                  </div>
+                 <!--<div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="static/images/clg/tyagi.jpg" alt="Lakender Tyagi" style="height: 368px ;width: 250px;">
+                        <div class="player-name">
+                           <div class="desination-2">Back End and Database</div>
+                           <h5>Shweta Singh</h5>
+                           <span class="player-number">MCA</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="static/images/clg/anshul.jpg" alt="" style="height: 368px ;width: 250px;">
+                        <div class="player-name">
+                           <div class="desination-2">Quality Assurance</div>
+                           <h5>Shweta Singh</h5>
+                           <span class="player-number">MCA</span>
+                        </div>
+                     </div>
+                  </div>
+                  -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer id="footer" class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <div class="footer-logo">
+                           <a href="#"><img src="static/images/footer-logo.png" alt="#" /></a>
+                        </div>
+                        <p> Noida Institute of Engineering and Technology (NIET) in Greater Noida was ranked 5th in Uttar Pradesh according to the AKTU Merit List. The ranking was given based on the performance of the students in university examinations.</p>
+                        <ul class="social-icons style-4 pull-left">
+                           <li><a class="facebook" href="https://www.facebook.com/NIET.Gr.Noida"><i class="fa fa-facebook"></i></a></li>
+                           <li><a class="twitter" href="https://www.instagram.com/nietgreaternoida/" ><i class="fa fa-instagram"></i></a></li>
+                           <li><a class="youtube" href="https://www.youtube.com/channel/UCPx0fIQFOuiWtOa9BAAFDpw" ><i class="fa fa-youtube-play"></i></a></li>
+                           <li><a class="pinterest" href="https://www.linkedin.com/school/noida-institute-of-engineering-technology/" ><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <h3>Menu</h3>
+                        <ul class="footer-menu">
+                           <li><a href="/about" style="color: white;">About Us</a></li>
+                           <li><a href="/contact" style="color: white;">Contact us</a></li>
+                           <li><a href="/gallery" style="color: white;">Gallery</a></li>
+                           <li><a href="/notify" style="color: white;">Latest News</a></li>
+                           <li><a href="/protocol" style="color: white;">Protocals</a></li>
+                           <li><a href="/contact" style="color: white;">Register Here</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <h3>Contact us</h3>
+                        <ul class="address-list">
+                           <li style="color: white;"><i class="fa fa-map-marker"></i> Noida Institute of Engineering Technology 19, Knowledge Park- II, Institutional Area,
+                              Greater Noida (UP) - 201306,</li>
+                           <li style="color: white;"><i class="fa fa-phone"></i>+91 8448384611</li>
+                           <li style="color: white;"><i style="font-size:20px;top:5px;" class="fa fa-envelope" style="color: white;"></i> <a href="mailto:support@company.com" style="color: white;">info@NIET.org</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="full">
+                     <div class="contact-footerMap">
+                        <!--<iframe src="https://maps.app.goo.gl/gAFhHb7b7g7yUdVv5" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        -->
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=niet%20noida%20up%20india&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen ></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;height:350px;width:600px;}</style></div></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <p>Noida-Institute-Of-Engineering-Technology © 2024 <a href="https://www.instagram.com/Noida-Institute-Of-Engineering-Technology Educational /" target="_blank" style="color: white; text-decoration: none;">(NIET)</a></p>
+            </div>
+         </div>
+      </footer>
+      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="static/js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="static/js/custom.js"></script>
+   </body>
+</html>

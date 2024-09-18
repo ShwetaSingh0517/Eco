@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="static/images/fabicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/navabr.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            })
+    
+        })</script>
+    <nav class="nav">
+        <div class="clg_text">
+            <label class="logo-img">
+                <a href="#" class="College_Events">Admin Portal</a>
+            </label>
+        </div>
+        <div class="nav_texts"></div>
+        <ul>
+            <li><a href="/" class="nav-itemss">Home</a></li>
+            <li><a href="#Admin_0" class="nav-itemss">Admin Control</a></li>
+            <li><a href="#Event_mngmnt" class="nav-itemss">Updates Management</a></li>
+            <li><a href="#Gallery_update" class="nav-itemss">Gallery Updataion</a></li>
+            <li><a href="#Registration_data" class="nav-itemss">Registration Control</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <div class="container" id="Admin_0"></div>
+    <h1 class="main_heading">Admin Panel</h1>
+    <br>
+    <!-- ... (previous content) ... -->
+
+    <!-- Add Admin Credentials Form -->
+    <div class="upperdv">
+        <div class="User_Id_form Add-admin">
+            <h2>Add Admin Credentials:</h2>
+            <br>
+            <form action="/add_admin" method="POST">
+                <div class="form-group">
+                    <label for="new_username">Username*:</label>
+                    <input type="text" placeholder="Admin" class="form-control" id="new_username"
+                        name="new_username" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="new_password">Password*:</label>
+                    <input type="password" placeholder="Xyz123#@" class="form-control" id="new_password"
+                        name="new_password" required>
+                </div>
+                <br>
+                <div class="btn_container">
+                    <button type="submit" class="button-style">Add Admin</button>
+                </div>
+            </form>
+        </div>
+        <div class="User_Id_form delete_user">
+            <!-- Delete Admin Credentials Form -->
+            <h2>Delete Admin Credentials</h2>
+            <br>
+            <form action="/delete_admin" method="POST">
+                <div class="form-group">
+                    <label for="del_username">Username to Delete:</label>
+                    <input type="text" placeholder="name" class="form-control" id="del_username" name="del_username" required>
+                </div>
+                <div class="btn_container delete-btn">
+                    <button type="submit" class="btn btn-danger">Delete Admin</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ... (previous content) ... -->
+
+    <div class="User_Id_form list_admin">
+        <h2>List of Admins</h2>
+        <table>
+            <tr>
+                <th>Username:</th>
+                <th>Password:</th>
+            </tr>
+            {% for admin in admins %}
+            <tr>
+                <td>{{ admin['username'] }}</td>
+                <td>{{ admin['password'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <br><br><br><br>
+    <h2>Change Sport Status</h2>
+    <form method="POST" action="/admin_change_status">
+        <label for="sport_name">Sport Name:</label>
+        <select id="sport_name" name="sport_name" required>
+            <option value="cricket">Cricket</option>
+            <option value="football">Football</option>
+            <option value="volleyball">VolleyBall</option>
+            <option value="basketball">BasketBall</option>
+            <option value="badminton">Badminton</option>
+        </select>
+        
+        <label for="new_status">New Status:</label>
+        <select id="new_status" name="new_status">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+        <input type="submit" value="Change Status">
+    </form>
+    
+    <h2>Current Sports Status</h2>
+    <ul>
+        <li>Cricket: {{ current_sport_statuses['cricket'] }}</li>
+        <li>Football: {{ current_sport_statuses['football'] }}</li>
+        <li>Volleyball: {{ current_sport_statuses['volleyball']}}</li>
+        <li>Basketball: {{ current_sport_statuses['basketball'] }}</li>
+        <li>Badminton: {{ current_sport_statuses['badminton'] }}</li>
+    </ul>
+
+<div class="faculty_coordinator">
+    <h1 class="main_heading">Coordinator Management</h1>
+<br>
+
+<!-- Add Coordinator Form -->
+<div class="User_Id_form00_add_coordinator">
+    <h2>Add Coordinator:</h2>
+    <br>
+    <form action="/add_coordinator" method="POST">
+        <div class="form-group">
+            <label for="coordinator_name">Coordinator Name*:</label>
+            <input type="text" placeholder="John Doe" class="form-control" id="coordinator_name" name="coordinator_name" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="sport_name">Sport*:</label>
+            <input type="text" placeholder="Football" class="form-control" id="sport_name" name="sport_name" required>
+        </div>
+        <br>
+        <div class="btn_container">
+            <button type="submit" class="button-style">Add Coordinator</button>
+        </div>
+    </form>
+</div>
+
+<!-- Delete Coordinator Form -->
+<div class="User_Id_form00_delete_coordinator">
+    <h2>Delete Coordinator:</h2>
+    <br>
+    <form action="/delete_coordinator" method="POST">
+        <div class="form-group">
+            <label for="coordinator_name">Coordinator to Delete:</label>
+            <input type="text" placeholder="John Doe" class="form-control" id="coordinator_name" name="coordinator_name" required>
+        </div>
+        <br>
+        <div class="btn_container delete-btn">
+            <button type="submit" class="btn btn-danger">Delete Coordinator</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- List of Coordinators -->
+<div class="User_Id_form00 list_coordinators">
+    <h2>List of Coordinators</h2>
+    <table>
+        <tr>
+            <th>Coordinator Name:</th>
+            <th>Sport:</th>
+        </tr>
+        {% for coordinator, sport in coordinators.items() %}
+        <tr>
+            <td>{{ coordinator }}</td>
+            <td>{{ sport }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</div>
+<br><br><br><br>
+    <div class="faculty_coordinator">
+
+    <h1 class="main_heading">Student Coordinator Management</h1>
+<br>
+<table>
+<!-- Add Coordinator Form -->
+<tr>
+<td>
+<div class="User_Id_form00_add_coordinator">
+    <h2>Add Coordinator:</h2>
+    <br>
+    <form action="/add_student_coordinator" method="POST">
+        <div class="form-group">
+            <label for="student_coordinator_name">Coordinator Name*:</label>
+            <input type="text" placeholder="John Doe" class="form-control" id="coordinator_name" name="student_coordinator_name" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="sport_name">Sport*:</label>
+            <input type="text" placeholder="Football" class="form-control" id="sport_name" name="sport_name" required>
+        </div>
+        <br>
+        <div class="btn_container">
+            <button type="submit" class="button-style">Add Coordinator</button>
+        </div>
+    </form>
+</div>
+</td>
+<td>
+<!-- Delete Coordinator Form -->
+<div class="User_Id_form00_delete_coordinator">
+    <h2>Delete Student Coordinator:</h2>
+    <br>
+    <form action="/delete_student_coordinator" method="POST">
+        <div class="form-group">
+            <label for="student_coordinator_name">Coordinator to Delete:</label>
+            <input type="text" placeholder="John Doe" class="form-control" id="coordinator_name" name="student_coordinator_name" required>
+        </div>
+        <br>
+        <div class="btn_container delete-btn">
+            <button type="submit" class="btn btn-danger">Delete Coordinator</button>
+        </div>
+    </form>
+</div>
+</td>
+</table>
+<!-- List of Coordinators -->
+<div class="User_Id_form00 list_coordinators">
+    <h2>List of Student Coordinators</h2>
+    <table>
+        <tr>
+            <th>Coordinator Name:</th>
+            <th>Sport:</th>
+        </tr>
+        {% for coordinator, sport in s_coordinators.items() %}
+        <tr>
+            <td>{{ coordinator }}</td>
+            <td>{{ sport }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</div>
+<br><br><br>
+<div class="header">
+    <h1>Game Month Manager</h1>
+</div>
+
+<div class="container">
+    <h2>Game Months and Sports:</h2>
+    <ul>
+        {% for data in game_data %}
+            <li>{{ data['month'] }} - {{ data['sport'] }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Next Sport:</h2>
+    <p class="green-text">{{ next_sport }}</p>
+
+    <h2>Time to Next Game:</h2>
+    <p class="blue-text">{{ time_to_next_game }}</p>
+
+    <h2>Add Month and Sport:</h2>
+    <form method="post" action="/add_month">
+        <input type="text" name="new_month" placeholder="Month" required>
+        <input type="text" name="new_sport" placeholder="Sport" required>
+        <input type="submit" value="Add">
+    </form>
+
+    <h2>Delete Month:</h2>
+    <form method="post" action="/delete_month">
+        <select name="month_to_delete" required>
+            {% for data in game_data %}
+                <option value="{{ data['month'] }}">{{ data['month'] }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+    <br><br><br><br>
+    <div id="Event_mngmnt">
+        <center><h1>Event Management</h1></center>
+        <br>
+        <div class="User_Id_form list_admin">
+            <div>
+                <form method="POST" action="/add_update">
+                    <label for="event_update">Add Event Update:</label>&nbsp;&nbsp;
+                    <input type="text" name="event_update" id="event_update" placeholder="Enter an event update">
+                    <button type="submit" class="button-style">Add Update</button>
+                </form>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div>
+            <center><strong><h2>Event Updates</h2><strong></center>
+            <table class="table-style">
+                <thead>
+                    <tr>
+                        <th>Event Update</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for update in event_updates %}
+                    <tr>
+                        <td>{{ update }}</td>
+                        <td>
+                            <form method="POST" action="/admin/delete_update">
+                                <input type="hidden" name="update" value="{{ update }}">
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br>
+    <div id="Gallery_update">
+        <hr>
+        <center><h1>GALLERY UPDATE</h1></center>
+        <hr><br><br>
+        <div class="User_Id_form list_admin">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <center><h2>Upload Images</h2><br></center>
+                <input type="file" name="files[]" accept="image/*" multiple>
+                <input type="submit" value="Upload" class="btn-upload">
+            </form>
+            <h4>Image Dimensions (Height: 200px, Width: 400px)</h4>
+        </div>
+        <div class="User_Id_form list_admin">
+            <form method="POST" action="/delete">
+                <label for="imageSelect">Select an image to delete</label><br><br>
+                <select id="imageSelect" name="selected_file">
+                    {% for filename in image_filenames %}
+                        <option value="{{ filename }}">{{ filename }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="btn btn-danger">Delete Selected</button>
+            </form>
+        </div>
+    </div>
+    <!-- Display Registration Data -->
+    <br><br><br><hr>
+    <div id="Registration_data">
+        <center><h1>Registration Data</h1></center>
+        <hr><br>
+        {% for sport, data in all_data.items() %}
+        <br><br><center><h3>{{ sport }}</h3></center><br><br>
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Team Name</th>
+                    <th>Captain Name</th>
+                    <th>Vice Captain Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Student ID</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Players JSON</th>
+                    <th>Registration Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                    <td>{{ row[8] }}</td>
+                    <td>{{ row[9] }}</td>
+                    <td>{{ row[10] }}</td>
+                    <td>{{ row[11] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+        <br><br>
+        <div class="User_Id_form1">
+            <center><h2>Delete Student</h2></center><br>
+            <form method="POST" action="/delete_student">
+                <label for="delete_student_id">ID to Delete:</label>
+                <input type="text" id="delete_student_id" name="student_id" required>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+    <div class="upper_download_list2">
+        <div class="btn-download-list">
+            <a href="/view_all_data" class="btn1 btn-primary">Download Students List</a>
+        </div>
+    </div>
+    
+    <!-- Download Students List Button -->
+    
+
+    <!-- JavaScript Code (added for AJAX deletion) -->
+    <script>
+        // Function to delete a student via AJAX
+        function deleteStudent(studentId) {
+            if (confirm('Are you sure you want to delete this student?')) {
+                fetch(`/delete_student_ajax/${studentId}`, {
+                    method: 'DELETE',
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);
+                        if (data.status === 'success') {
+                            location.reload();  // Refresh the page after successful deletion
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+        }
+    </script>
+    </div>
+</body>
+
+</html>

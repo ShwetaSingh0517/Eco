@@ -1,0 +1,147 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(139, 160, 160);
+    animation: sahil 5s linear infinite alternate;
+    height: 100vh;
+    margin: 0;
+}
+
+.notification {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: notification-cycle 8s linear infinite;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notification p {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Add this CSS to your existing stylesheet */
+.formatted-text {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.formatted-text h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.formatted-text p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+}
+
+
+.notification:hover {
+    background-color: #ff4545;
+    color: #fff;
+}
+
+@keyframes notification-cycle {
+    0%, 100% {
+        transform: translateY(100%);
+        opacity: 0.4;
+    }
+    10%, 90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Event_updates {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+/* Add styles for other circles */
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.circles li {
+    padding: 3px;
+}
